@@ -4,8 +4,12 @@
 def ft_count_harvest_recursive(day: int = -1) -> None:
     if day == -1:
         ft_count_harvest_recursive(int(input("Days until harvest: ")))
-        print("Harvest time!")
+        if day == -1:
+            print("Harvest time!")
         return
+    if day < -1:
+        print(f"harvested {-day} days ago")
+        exit(0)
     if day > 1:
         ft_count_harvest_recursive(day - 1)
     print(f"Day {day}")
