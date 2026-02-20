@@ -8,4 +8,4 @@ def ft_count_harvest_iterative() -> None:
             print("Day", i)
         print("Harvest time!")
     else:
-        print(f"harvested {-day} days ago")
+        print(f"harvested {-harvest} days ago")
